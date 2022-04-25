@@ -27,9 +27,9 @@ export const counterModel = defineModel('counter', {
         state.value += response.data;
       });
     },
-    async incrementIfOdd(amount: number) {
+    incrementIfOdd(amount: number) {
       if (this.state.value % 2 === 1) {
-        return this.incrementByAmount(amount);
+        this.incrementByAmount(amount);
       }
     },
   },
