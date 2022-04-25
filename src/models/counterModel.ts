@@ -1,5 +1,5 @@
 import { defineModel } from 'foca';
-import { fetchCount } from '../pages/counter/counterAPI';
+import { fetchCount } from '../components/counter/counterAPI';
 
 const initialState: {
   value: number;
